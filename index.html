@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <title>Vue Mastery</title>
@@ -8,12 +9,19 @@
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
+
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
-    </div>
+      <h1>{{ product}}</h1>
+      <p>{{ description }}</p>
 
-    <!-- Import Js -->
+    </div> <!-- Import App -->
     <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
   </body>
+
 </html>
